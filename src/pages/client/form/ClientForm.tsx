@@ -22,7 +22,7 @@ const ClientForm = (props: IProps) => {
         <Input  />
       </Form.Item>
 
-      <Form.Item name="phone" label="Phone">
+      <Form.Item name="phone" label="Phone" rules={[validator.require]}>
         <Input />
       </Form.Item>
 

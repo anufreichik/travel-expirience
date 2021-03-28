@@ -10,7 +10,7 @@ interface IProps {
 const ClientDashboardControls = (props: IProps) => {
   const clientCreate = () => {
     props.open({
-      title: 'Create new Client',
+      title: 'Create Client',
       component: 'ClientFormCreate',
       place: 'ClientDashboard',
       width: 800,

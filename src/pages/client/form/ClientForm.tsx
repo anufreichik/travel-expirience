@@ -30,7 +30,7 @@ const ClientForm = (props: IProps) => {
         <Input />
       </Form.Item>
 
-      <Form.Item name="notes" label="Notes">
+      <Form.Item name="notes" label="Notes" rules={[validator.maxlength200]}>
         <Input.TextArea autoSize={{ minRows: 3, maxRows: 6 }} />
       </Form.Item>
 

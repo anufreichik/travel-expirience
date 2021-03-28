@@ -4,20 +4,24 @@ const validator = {
     message: 'Required',
   },
   maxlength4: {
-    len: 4,
-    message: 'Must be 4 characters',
+    max: 4,
+    message: 'Must be less than 4 characters',
   },
   maxlength7: {
-    len: 7,
-    message: 'Must be 7 characters',
+    max: 7,
+    message: 'Must be less than 7 characters',
   },
   maxlength10: {
-    len: 10,
-    message: 'Must be 10 characters',
+    max: 10,
+    message: 'Must be less than 10 characters',
+  },
+  maxlength200: {
+    max: 200,
+    message: 'Must be less than 200 characters',
   },
   maxlength15: {
-    len: 15,
-    message: 'Must be 15 characters',
+    max: 15,
+    message: 'Must be less than 15 characters',
   },
 };
 

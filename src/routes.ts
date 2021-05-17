@@ -27,17 +27,17 @@ export default [
           { path: '/base', component: '@/pages/base/dashboard/BaseDashboard' },
           { path: '/base/:baseId', component: '@/pages/base/view/BaseView' },
 
-          { path: '/client', component: '@/pages/client/dashboard/ClientDashboard' },
-          { path: '/client/:clientId', component: '@/pages/client/view/ClientView' },
+          { path: '/experience', component: '@/pages/experience/dashboard/ExperienceDashboard' },
+          { path: '/experience/:experienceId', component: '@/pages/experience/view/ExperienceView' },
 
-          { path: '/order', component: '@/pages/order/dashboard/OrderDashboard' },
-          { path: '/order/:orderId', component: '@/pages/order/view/OrderView' },
-
-          { path: '/vendor', component: '@/pages/vendor/dashboard/VendorDashboard' },
-          { path: '/vendor/:vendorId', component: '@/pages/vendor/view/VendorView' },
-
-          { path: '/service', component: '@/pages/service/dashboard/ServiceDashboard' },
-          { path: '/service/:serviceId', component: '@/pages/service/view/ServiceView' },
+          // { path: '/attraction', component: '@/pages/attraction/dashboard/AttractionDashboard' },
+          // { path: '/attraction/:attractionId', component: '@/pages/attraction/view/AttractionView' },
+          //
+          // { path: '/activity', component: '@/pages/activity/dashboard/ActivityDashboard' },
+          // { path: '/activity/:activityId', component: '@/pages/activity/view/ActivityView' },
+          //
+          // { path: '/restaurant', component: '@/pages/restaurant/dashboard/RestaurantDashboard' },
+          // { path: '/restaurant/:restaurantId', component: '@/pages/restaurant/view/RestaurantView' },
 
           // *****  ====================================
           { path: '/users', component: '@/pages/user/userSearch/UsersDashboard' },
@@ -51,10 +51,6 @@ export default [
             path: '/settings/:userId',
             component: '@/layout/UserSettingsLayout',
             routes: [
-              {
-                path: '/settings/:userId',
-                redirect: '/settings/companyAccount/:userId',
-              },
               {
                 path: '/settings/profile/:userId',
                 component: '@/pages/user/settings/profile/UserSettingsEditProfileWrapper',

@@ -67,12 +67,12 @@ const UserInfo = (props: IProps) => {
   } else
     return (
       <div className="m-0">
-        <Link to={'/user/login'} className="mr-4" data-qa="login">
-          Login
+        <Link to={'/user/login'} className="mr-4 login-button" data-qa="login">
+          Your Account
         </Link>
 
-        <Link to={'/user/register'} className="register-button p-3" data-qa="register">
-          <strong>Get started</strong> — it's free
+        <Link to={'/user/register'} className="login-button p-3" data-qa="register">
+          Register
         </Link>
       </div>
     );

@@ -4,8 +4,6 @@ import { Link } from 'umi';
 const menu = [
   { link: '/contact', text: 'Contact' },
   { link: '/subscribe', text: 'Subscribe' },
-  { link: '/pricing', text: 'Pricing' },
-  { link: '/industries', text: 'Industries' },
   { link: '/faq', text: 'FAQ' },
 ];
 

@@ -8,18 +8,16 @@ interface IProps {
 
 export default ({ children }: IProps) => {
   return (
-    <>
-      <Row align="middle">
-        <Link to="/" className="site-name">
-          ClientBase
+    <div className="container">
+      <div className="row">
+        <Link to="/" className="navbar-brand">
+          TRAVELEKS
         </Link>
-      </Row>
+      </div>
 
-      <Row justify="center" className="mt-3rem ">
-        <Col xs={20} sm={20} md={12} lg={8}>
-          {children}
-        </Col>
-      </Row>
-    </>
+      <div className="row mt-5">
+        <div className="col-lg-5 col-md-5 col-sm-12 mx-auto">{children}</div>
+      </div>
+    </div>
   );
 };

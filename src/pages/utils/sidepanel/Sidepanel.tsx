@@ -9,18 +9,6 @@ import UserFormSendMessageWrapper from '@/pages/user/userSearch/form/UserFormSen
 import BaseFormCreateWrapper from '@/pages/base/form/BaseFormCreateWrapper';
 import BaseFormEditWrapper from '@/pages/base/form/BaseFormEditWrapper';
 
-import ClientFormCreateWrapper from '@/pages/client/form/ClientFormCreateWrapper';
-import ClientFormEditWrapper from '@/pages/client/form/ClientFormEditWrapper';
-
-import VendorFormCreateWrapper from '@/pages/vendor/form/VendorFormCreateWrapper';
-import VendorFormEditWrapper from '@/pages/vendor/form/VendorFormEditWrapper';
-
-import OrderFormCreateWrapper from '@/pages/order/form/OrderFormCreateWrapper';
-import OrderFormEditWrapper from '@/pages/order/form/OrderFormEditWrapper';
-
-import ServiceFormCreateWrapper from '@/pages/service/form/ServiceFormCreateWrapper';
-import ServiceFormEditWrapper from '@/pages/service/form/ServiceFormEditWrapper';
-
 interface IProps extends ISidepanel {
   Sidepanel: ISidepanel;
   close: () => void;
@@ -35,19 +23,6 @@ const Sidepanel = (props: IProps) => {
   const components: any = {
     BaseFormCreate: <BaseFormCreateWrapper />,
     BaseFormEdit: <BaseFormEditWrapper />,
-
-    ClientFormCreate: <ClientFormCreateWrapper />,
-    ClientFormEdit: <ClientFormEditWrapper />,
-
-    VendorFormCreate: <VendorFormCreateWrapper />,
-    VendorFormEdit: <VendorFormEditWrapper />,
-
-    OrderFormCreate: <OrderFormCreateWrapper />,
-    OrderFormEdit: <OrderFormEditWrapper />,
-
-    ServiceFormCreate: <ServiceFormCreateWrapper />,
-    ServiceFormEdit: <ServiceFormEditWrapper />,
-
     UsersFormDelete: <UsersFormDeleteWrapper />,
     UserFormSendMessage: <UserFormSendMessageWrapper />,
   };
